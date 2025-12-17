@@ -23,8 +23,31 @@ img{max-width:100%;display:block}
 .nav-links a{text-decoration:none;font-weight:500}
 
 
-.hamburger{display:none;flex-direction:column;cursor:pointer}
-.hamburger span{height:3px;width:25px;background:#000;margin:4px 0;border-radius:5px}
+/* GITHUB-STYLE MENU BUTTON */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 12px;
+  border: 1px solid #d0d7de; /* GitHub-like border */
+  border-radius: 6px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hamburger:hover {
+  background: #f6f8fa;
+}
+
+.hamburger span {
+  width: 18px;
+  height: 2px;
+  background: #24292f; /* GitHub dark */
+  border-radius: 2px;
+}
+
 
 
 /* HERO */
