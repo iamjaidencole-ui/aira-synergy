@@ -1,138 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Aira Synergy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aira Synergy | Home</title>
+    <meta name="description" content="Aira Synergy is a diversified Jamaican holding company building essential service brands in logistics, cleaning, and agriculture.">
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-yXxr/3o+Jq7j+c8sJ6z3Oy3C6ZHP8u/wP4yQqF5j4WrS+yA0/KY4Fn3QEj2T/0lZrP4U3P7dhlQZ2q8vQ1Z3RQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-
-
-<link rel="stylesheet" href="style.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-
-<!-- HEADER -->
-<header class="header">
-<div class="nav">
-<div class="logo">Aira Synergy</div>
-
-
-<ul class="nav-links" id="navLinks">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#why">Why Us</a></li>
-<li><a href="#companies">Companies</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-
-<div class="hamburger" id="hamburger">
-<span></span>
-<span></span>
-<span></span>
-</div>
-</div>
+<!-- Header / Navigation -->
+<header class="site-header">
+    <div class="container header-container">
+        <div class="logo">Aira Synergy</div>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#why">Why Choose Us</a></li>
+                <li><a href="#companies">Our Companies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
 </header>
 
-
-<!-- HERO -->
+<!-- Hero Section -->
 <section id="home" class="hero">
-<div class="hero-content">
-<span class="eyebrow">Home of the Aira Group of Companies</span>
-<h1>Building Stronger Services for a Stronger Jamaica</h1>
-<a href="#about" class="btn-primary">Learn More</a>
-</div>
-
-
-<div class="hero-image">
-<img src="hero.jpg" alt="Aira Synergy" />
-</div>
+    <div class="container">
+        <h1>Home of the Aira Group of Companies</h1>
+        <p>Building Stronger Services for a Stronger Jamaica</p>
+        <a href="#about" class="btn-primary">Learn More</a>
+    </div>
 </section>
 
-
-<!-- ABOUT -->
-<section id="about" class="section reveal">
-<h2>About Us</h2>
-<h3>Aira Synergy</h3>
-<p>
-Aira Synergy is a diversified Jamaican holding company focused on building essential service brands that deliver reliability, efficiency, and exceptional customer experience. We operate across freight and logistics, cleaning services, and agriculture—developing businesses that support everyday life, fuel economic growth, and set new standards for quality.
-</p>
-
-
-<div class="mission">
-<h4>Our Mission</h4>
-<p>Create companies people trust. Build services that scale. Drive growth through synergy.</p>
-</div>
+<!-- About Section -->
+<section id="about" class="section">
+    <div class="container">
+        <h2>About Us</h2>
+        <h3>Aira Synergy</h3>
+        <p>Aira Synergy is a diversified Jamaican holding company focused on building essential service brands that deliver reliability, efficiency and exceptional customer experience. We operate across freight, logistics, cleaning services and agriculture developing businesses that support everyday life, fuel economic growth and set new standards for quality.</p>
+        <p><strong>Our mission is simple:</strong> Create companies people trust. Build services that scale. Drive growth through synergy.</p>
+        <a href="#why" class="btn-secondary">Learn More</a>
+    </div>
 </section>
 
-
-<!-- WHY US -->
-<section id="why" class="section light reveal">
-<h2>Why Choose Us</h2>
-<p class="section-intro">Aira Synergy brings structure, strategy, and reliability to every brand we operate.</p>
-
-
-<div class="cards">
-<div class="card">
-<i class="fa-solid fa-gear"></i>
-<h3>Proven Operational Excellence</h3>
-<p>Every business is built on strong systems, efficiency, and performance standards.</p>
-</div>
-<div class="card">
-<i class="fa-solid fa-chart-line"></i>
-<h3>Strategic Growth Mindset</h3>
-<p>We invest in technology, better processes, and expansion opportunities.</p>
-</div>
+<!-- Why Choose Us Section -->
+<section id="why" class="section light">
+    <div class="container">
+        <h2>Why Choose Us</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-cogs icon"></i>
+                <h4>Proven Operational Excellence</h4>
+                <p>Every business is built on strong systems, efficiency and performance standards.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chart-line icon"></i>
+                <h4>Strategic Growth Mindset</h4>
+                <p>We continually invest in new technology, better processes, and expansion opportunities.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-users icon"></i>
+                <h4>Strong Leadership & Synergy</h4>
+                <p>Shared knowledge, shared resources, shared results. We build brands that people trust.</p>
+            </div>
+        </div>
+        <a href="#companies" class="btn-secondary">Learn More</a>
+    </div>
 </section>
 
-
-<!-- COMPANIES -->
-<section id="companies" class="section reveal">
-<h2>Our Companies</h2>
-<p class="section-intro">Industries We Serve</p>
-
-
-<div class="cards">
-<div class="card company">
-<i class="fa-solid fa-truck-fast"></i>
-<h3>AIRA Freight & Logistics</h3>
-<p>Efficient, customer-focused shipping solutions connecting Jamaica to the world.</p>
-</div>
-<div class="card company">
-<i class="fa-solid fa-broom"></i>
-<h3>AIRA Cleaning Solutions</h3>
-<p>Residential and commercial cleaning designed for consistency and peace of mind.</p>
-</div>
-<div class="card company">
-<i class="fa-solid fa-seedling"></i>
-<h3>AIRA Farms</h3>
-<p>Sustainable farming supporting Jamaica’s food supply and agricultural growth.</p>
-</div>
-</div>
-</section>
-<!-- CTA -->
-<section id="contact" class="cta reveal">
-<h2>Need Help With Easier Business Solutions?</h2>
-<p>We are experts. Let’s build together.</p>
-<a href="#" class="btn-secondary">Learn More</a>
+<!-- Companies Section -->
+<section id="companies" class="section">
+    <div class="container">
+        <h2>Our Companies</h2>
+        <p>Industries We Serve!</p>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-truck-fast icon"></i>
+                <h4>AIRA Freight and Logistics</h4>
+                <p>Efficient, customer-focused shipping solutions that connect Jamaica to the world. Fast delivery, transparent processes and service built on trust.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-broom icon"></i>
+                <h4>AIRA Cleaning Solutions</h4>
+                <p>Residential and commercial cleaning designed for consistency, professionalism and peace of mind. Aira keeps homes and businesses operating at their best.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-seedling icon"></i>
+                <h4>AIRA Farms</h4>
+                <p>Sustainable farming operations supporting Jamaica’s food supply and agricultural growth. Fresh produce, responsible practices and long-term value creation.</p>
+            </div>
+        </div>
+        <a href="#contact" class="btn-primary">Need Help? Learn More</a>
+    </div>
 </section>
 
-
-<!-- FOOTER -->
-<footer>
-<p>© 2025 AIRA Synergy</p>
-<span>Powered by AIRA Synergy</span>
+<!-- Footer -->
+<footer id="contact" class="footer">
+    <div class="container">
+        <p>© 2025 Aira Synergy. All rights reserved.</p>
+    </div>
 </footer>
 
-
-<script src="script.js"></script>
+<!-- JS -->
+<script src="js/script.js"></script>
 </body>
 </html>
