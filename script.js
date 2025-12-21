@@ -1,23 +1,17 @@
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
+// Mobile menu toggle
+const menuToggle = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('active')));
 
-
-hamburger.addEventListener('click', () => {
-navLinks.classList.toggle('active');
-});
-
-
-const reveals = document.querySelectorAll('.reveal');
-
-
-function revealOnScroll() {
-reveals.forEach(el => {
-if (el.getBoundingClientRect().top < window.innerHeight - 100) {
-el.classList.add('active');
-}
-});
-}
-
-
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
+// Scroll animation for cards
+const cards = document.querySelectorAll('.card');
+const showCards = () => {
+    const triggerBottom = window.innerHeight / 5 * 4;
+    cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        if(cardTop < triggerBottom){ card.classList.add('show'); }
+    });
+};
+window.addEventListener('scroll', showCards);
+window.addEventListener('load', showCards);
