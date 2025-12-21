@@ -1,3 +1,4 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Body */
 body {
   color: #24292f;
   line-height: 1.6;
@@ -17,7 +19,7 @@ body {
   padding: 0 20px;
 }
 
-/* HEADER */
+/* Header */
 .site-header {
   position: sticky;
   top: 0;
@@ -33,12 +35,12 @@ body {
   justify-content: space-between;
 }
 
-/* LOGO */
+/* Logo */
 .logo-area img {
   height: 38px;
 }
 
-/* NAV */
+/* Nav */
 .nav-links {
   display: flex;
   list-style: none;
@@ -59,11 +61,14 @@ body {
   background: #f6f8fa;
 }
 
-/* MOBILE MENU */
+/* Mobile Menu Button (GitHub style) */
 .menu-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .menu-toggle span {
@@ -71,9 +76,10 @@ body {
   width: 25px;
   background: #24292f;
   margin: 4px 0;
+  border-radius: 2px;
 }
 
-/* HERO */
+/* Hero */
 .hero {
   min-height: 80vh;
   display: flex;
@@ -93,7 +99,6 @@ body {
   margin-bottom: 24px;
 }
 
-/* BUTTON */
 .btn-primary {
   background: #ff6a00;
   color: white;
@@ -103,7 +108,7 @@ body {
   font-weight: 600;
 }
 
-/* SECTIONS */
+/* Sections */
 .section {
   padding: 90px 0;
   text-align: center;
@@ -118,7 +123,7 @@ body {
   font-weight: 600;
 }
 
-/* GRID */
+/* Grid & Cards */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -126,7 +131,6 @@ body {
   margin-top: 50px;
 }
 
-/* CARDS */
 .card {
   background: #fff;
   border: 1px solid #e1e4e8;
@@ -146,7 +150,7 @@ body {
   margin-bottom: 16px;
 }
 
-/* FOOTER */
+/* Footer */
 .footer {
   background: #0d1117;
   color: #fff;
@@ -154,7 +158,7 @@ body {
   padding: 30px 0;
 }
 
-/* ANIMATION */
+/* Scroll Animations */
 .fade-up {
   opacity: 0;
   transform: translateY(20px);
@@ -166,7 +170,7 @@ body {
   transform: translateY(0);
 }
 
-/* RESPONSIVE */
+/* Responsive */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
