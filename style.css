@@ -277,3 +277,26 @@ body {
     display: flex;
   }
 }
+/* =========================
+   MOBILE MENU OVERLAY
+========================= */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease;
+  z-index: 1500;
+}
+
+/* When menu is open */
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ensure menu is above overlay */
+.mobile-menu {
+  z-index: 2000;
+}
