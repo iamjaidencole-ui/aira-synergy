@@ -7,7 +7,7 @@
   <meta name="description" content="Aira Synergy is a diversified Jamaican holding company building essential service brands.">
 
   <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -19,7 +19,6 @@
 
 <header class="site-header">
   <div class="container header-container">
-    <!-- LOGO AREA -->
     <div class="logo-area">
       <img src="logo.png" alt="Aira Synergy Logo">
     </div>
@@ -30,13 +29,13 @@
         <li><a href="#about">About</a></li>
         <li><a href="#why">Why Us</a></li>
         <li><a href="#companies">Companies</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 
-      <!-- GitHub-style menu button -->
-      <button class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <a href="#contact" class="nav-cta">Partner With Us</a>
+
+      <button class="menu-toggle">
+        <span></span><span></span><span></span>
       </button>
     </nav>
   </div>
@@ -44,24 +43,29 @@
 
 <!-- HERO -->
 <section id="home" class="hero fade-up">
-  <div class="container">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
     <h1>Home of the Aira Group of Companies</h1>
-    <p>Building Stronger Services for a Stronger Jamaica</p>
-    <a href="#about" class="btn-primary">Learn More</a>
+    <p>Building essential services and scalable brands across Jamaica.</p>
+    <div class="hero-actions">
+      <a href="#about" class="btn-primary">Who We Are</a>
+      <a href="#companies" class="btn-secondary">Our Companies</a>
+    </div>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section fade-up">
-  <div class="container">
-    <h2>About Us</h2>
+  <div class="container narrow">
+    <h2>About Aira Synergy</h2>
     <p>
-      Aira Synergy is a diversified Jamaican holding company focused on building
-      essential service brands that deliver reliability, efficiency and exceptional
-      customer experience.
+      Aira Synergy is a diversified Jamaican holding company focused on building,
+      scaling, and managing essential service brands that deliver reliability,
+      efficiency, and long-term value.
     </p>
     <p class="mission">
-      Create companies people trust. Build services that scale. Drive growth through synergy.
+      Create companies people trust. Build services that scale.
+      Drive growth through synergy.
     </p>
   </div>
 </section>
@@ -69,22 +73,22 @@
 <!-- WHY US -->
 <section id="why" class="section light fade-up">
   <div class="container">
-    <h2>Why Choose Us</h2>
+    <h2>Why Choose Aira</h2>
     <div class="grid">
-      <div class="card fade-up">
+      <div class="card">
         <i class="fa-solid fa-gears"></i>
         <h4>Operational Excellence</h4>
-        <p>Strong systems, efficiency, and performance standards.</p>
+        <p>Strong systems, disciplined execution, and performance-driven operations.</p>
       </div>
-      <div class="card fade-up">
+      <div class="card">
         <i class="fa-solid fa-chart-line"></i>
         <h4>Strategic Growth</h4>
-        <p>Continuous investment in technology and expansion.</p>
+        <p>Forward-thinking investments in technology, people, and expansion.</p>
       </div>
-      <div class="card fade-up">
+      <div class="card">
         <i class="fa-solid fa-people-group"></i>
         <h4>Leadership & Synergy</h4>
-        <p>Shared knowledge, shared resources, shared results.</p>
+        <p>Unified leadership and shared resources across all subsidiaries.</p>
       </div>
     </div>
   </div>
@@ -95,22 +99,40 @@
   <div class="container">
     <h2>Our Companies</h2>
     <div class="grid">
-      <div class="card fade-up">
+      <div class="card">
         <i class="fa-solid fa-plane"></i>
-        <h4>Aira Freight & Logistics</h4>
-        <p>Reliable shipping, logistics, and courier services from Sunrise, Florida to Jamaica, serving both personal and commercial shipments.</p>
+        <h4>Aira Freight</h4>
+        <p>Shipping, courier, and logistics services from the USA to Jamaica.</p>
       </div>
-      <div class="card fade-up">
-        <i class="fa-solid fa-water"></i>
+      <div class="card">
+        <i class="fa-solid fa-building"></i>
         <h4>Aira Cleaning Solutions</h4>
-        <p>Comprehensive cleaning solutions tailored to meet the unique needs of residential, commercial, and industrial clients.</p>
+        <p>Professional residential, commercial, and industrial cleaning services.</p>
       </div>
-      <div class="card fade-up">
+      <div class="card">
         <i class="fa-solid fa-seedling"></i>
         <h4>Aira Farms</h4>
-        <p>Sustainably fresh produce and agricultural products, cultivated with care, quality and environmental responsibility./p>
+        <p>Sustainably grown agricultural products with a focus on quality and care.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section light fade-up">
+  <div class="container narrow">
+    <h2>Contact Us</h2>
+    <p>
+      Interested in partnering with Aira Synergy or learning more about our companies?
+      Send us a message and our team will respond promptly.
+    </p>
+
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
   </div>
 </section>
 
@@ -120,14 +142,12 @@
   </div>
 </footer>
 
-<!-- JS -->
 <button id="scrollTopBtn">
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
     <path d="M12 5L5 12H9V19H15V12H19L12 5Z" fill="white"/>
   </svg>
 </button>
 
-<script src="script.js?v=1.1"></script>
+<script src="script.js"></script>
 </body>
 </html>
-  
