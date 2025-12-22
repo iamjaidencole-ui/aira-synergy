@@ -38,17 +38,26 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   window.location.href =
     `mailto:airasynergy@gmail.com?subject=${subject}&body=${body}`;
 });
-// Mobile menu toggle
 const menuToggle = document.getElementById("menuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
+const menuOverlay = document.getElementById("menuOverlay");
 
-menuToggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("active");
-});
+function openMenu() {
+  mobileMenu.classList.add("active");
+  menuOverlay.classList.add("active");
+}
 
-// Close menu when clicking a link
+function closeMenu() {
+  mobileMenu.classList.remove("active");
+  menuOverlay.classList.remove("active");
+}
+
+menuToggle.addEventListener("click", openMenu);
+
+// Close when clicking outside menu
+menuOverlay.addEventListener("click", closeMenu);
+
+// Close when clicking a menu link
 mobileMenu.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    mobileMenu.classList.remove("active");
-  });
+  link.addEventListener("click", closeMenu);
 });
