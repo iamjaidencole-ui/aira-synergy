@@ -27,20 +27,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
   faders.forEach(el => appear.observe(el));
 // Scroll To Top Button
-const scrollTopBtn = document.getElementById("scrollTopBtn");
+const scrollBtn = document.getElementById('scrollTopBtn');
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    scrollTopBtn.style.display = "flex";
-  } else {
-    scrollTopBtn.style.display = "none";
-  }
+window.addEventListener('scroll', () => {
+  scrollBtn.style.opacity = window.scrollY > 120 ? '0.9' : '0.4';
 });
 
-scrollTopBtn.addEventListener("click", () => {
+scrollBtn.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: 'smooth'
   });
-});
 });
