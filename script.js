@@ -1,38 +1,37 @@
-const menuBtn = document.getElementById('menuBtn');
-const navMenu = document.getElementById('navMenu');
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+const overlay = document.getElementById("menuOverlay");
 
-menuBtn.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
+  overlay.classList.toggle("active");
 });
 
-const reveals = document.querySelectorAll('.reveal');
+overlay.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+  overlay.classList.remove("active");
+});
 
-function revealElements() {
-    const triggerBottom = window.innerHeight * 0.85;
+// SCROLL ANIMATION
+const elements = document.querySelectorAll(".fade-up");
 
-    reveals.forEach((element) => {
-        const elementTop = element.getBoundingClientRect().top;
+function reveal() {
+  const trigger = window.innerHeight * 0.85;
 
-        if (elementTop < triggerBottom) {
-            element.classList.add('active');
-        }
-    });
+  elements.forEach(el => {
+    if (el.getBoundingClientRect().top < trigger) {
+      el.classList.add("show");
+    }
+  });
 }
 
-window.addEventListener('scroll', revealElements);
-window.addEventListener('load', revealElements);
+window.addEventListener("scroll", reveal);
+window.addEventListener("load", reveal);
 
-const glow = document.querySelector('.cursor-glow');
-
-window.addEventListener('mousemove', (e) => {
-    glow.style.left = `${e.clientX}px`;
-    glow.style.top = `${e.clientY}px`;
-});
-
-const navLinks = document.querySelectorAll('.nav a');
-
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-    });
+// CLOSE MENU ON LINK CLICK
+document.querySelectorAll(".mobile-menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+    overlay.classList.remove("active");
+  });
 });
