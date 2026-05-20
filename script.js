@@ -1,63 +1,38 @@
-// Fade-up animation
-const faders = document.querySelectorAll(".fade-up");
+const menuBtn = document.getElementById('menuBtn');
+const navMenu = document.getElementById('navMenu');
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
-  });
-}, { threshold: 0.2 });
-
-faders.forEach(el => observer.observe(el));
-
-// Scroll to top
-const scrollBtn = document.getElementById("scrollTopBtn");
-
-window.addEventListener("scroll", () => {
-  scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
 });
 
-scrollBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+const reveals = document.querySelectorAll('.reveal');
 
-// Contact form email redirect
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
+function revealElements() {
+    const triggerBottom = window.innerHeight * 0.85;
 
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+    reveals.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
 
-  const subject = encodeURIComponent("New Contact Message - Aira Synergy");
-  const body = encodeURIComponent(
-    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-  );
-
-  window.location.href =
-    `mailto:airasynergy@gmail.com?subject=${subject}&body=${body}`;
-});
-const menuToggle = document.getElementById("menuToggle");
-const mobileMenu = document.getElementById("mobileMenu");
-const menuOverlay = document.getElementById("menuOverlay");
-
-function openMenu() {
-  mobileMenu.classList.add("active");
-  menuOverlay.classList.add("active");
+        if (elementTop < triggerBottom) {
+            element.classList.add('active');
+        }
+    });
 }
 
-function closeMenu() {
-  mobileMenu.classList.remove("active");
-  menuOverlay.classList.remove("active");
-}
+window.addEventListener('scroll', revealElements);
+window.addEventListener('load', revealElements);
 
-menuToggle.addEventListener("click", openMenu);
+const glow = document.querySelector('.cursor-glow');
 
-// Close when clicking outside menu
-menuOverlay.addEventListener("click", closeMenu);
+window.addEventListener('mousemove', (e) => {
+    glow.style.left = `${e.clientX}px`;
+    glow.style.top = `${e.clientY}px`;
+});
 
-// Close when clicking a menu link
-mobileMenu.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", closeMenu);
+const navLinks = document.querySelectorAll('.nav a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+    });
 });
