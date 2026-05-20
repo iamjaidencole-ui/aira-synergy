@@ -1,157 +1,161 @@
-# index.html
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aira Modern Template</title>
+  <meta charset="UTF-8">
+  <title>Aira Synergy | Holding Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aira Synergy is a diversified Jamaican holding company building essential service brands.">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="cursor-glow"></div>
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-container">
 
-    <header class="header">
-        <div class="container nav-wrapper">
-            <a href="#" class="logo">AIRA</a>
+    <div class="logo-area">
+      <img src="logo.png" alt="Aira Synergy Logo">
+    </div>
 
-            <nav class="nav" id="navMenu">
-                <a href="#home">Home</a>
-                <a href="#features">Features</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
-            </nav>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#companies">Companies</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-            <button class="menu-btn" id="menuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
+      <a href="#contact" class="nav-cta">Partner With Us</a>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="container hero-grid">
-                <div class="hero-content reveal">
-                    <span class="hero-badge">Modern • Responsive • Optimized</span>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
 
-                    <h1>
-                        Build Stunning
-                        <span>Modern Websites</span>
-                        With Smooth Animations
-                    </h1>
+  </div>
+</header>
 
-                    <p>
-                        A premium modern template designed for performance,
-                        responsiveness, and exceptional user experience across all devices.
-                    </p>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#why">Why Us</a>
+  <a href="#companies">Companies</a>
+  <a href="#contact">Contact</a>
+</div>
 
-                    <div class="hero-buttons">
-                        <a href="#features" class="btn btn-primary">Get Started</a>
-                        <a href="#services" class="btn btn-secondary">Explore More</a>
-                    </div>
-                </div>
+<div class="menu-overlay" id="menuOverlay"></div>
 
-                <div class="hero-card reveal delay">
-                    <div class="floating-card glass">
-                        <div class="card-top">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+<!-- HERO -->
+<section id="home" class="hero fade-up">
+  <div class="container hero-content">
+    <h1>Home of the Aira Group of Companies</h1>
+    <p>Building essential services and scalable brands across Jamaica.</p>
 
-                        <div class="dashboard-grid">
-                            <div class="dashboard-box large"></div>
-                            <div class="dashboard-box"></div>
-                            <div class="dashboard-box"></div>
-                            <div class="dashboard-box wide"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="hero-actions">
+      <a href="#about" class="btn-primary">Who We Are</a>
+      <a href="#companies" class="btn-secondary">Our Companies</a>
+    </div>
+  </div>
+</section>
 
-        <section class="features section" id="features">
-            <div class="container">
-                <div class="section-title reveal">
-                    <h2>Premium Features</h2>
-                    <p>
-                        Designed with modern UI/UX principles to create an engaging digital experience.
-                    </p>
-                </div>
+<!-- ABOUT -->
+<section id="about" class="section fade-up">
+  <div class="container narrow glass">
+    <h2>About Aira Synergy</h2>
+    <p>
+      Aira Synergy is a diversified Jamaican holding company focused on building,
+      scaling, and managing essential service brands that deliver reliability,
+      efficiency, and long-term value.
+    </p>
+  </div>
+</section>
 
-                <div class="feature-grid">
-                    <div class="feature-card reveal">
-                        <div class="icon">⚡</div>
-                        <h3>Fast Performance</h3>
-                        <p>
-                            Lightweight structure optimized for speed, SEO, and user engagement.
-                        </p>
-                    </div>
+<!-- WHY -->
+<section id="why" class="section fade-up">
+  <div class="container">
+    <h2>Why Choose Aira</h2>
 
-                    <div class="feature-card reveal delay">
-                        <div class="icon">📱</div>
-                        <h3>Fully Responsive</h3>
-                        <p>
-                            Perfectly adapts to desktops, tablets, and mobile devices.
-                        </p>
-                    </div>
+    <div class="grid">
+      <div class="card glass">
+        <i class="fa-solid fa-gears"></i>
+        <h4>Operational Excellence</h4>
+        <p>Strong systems and disciplined execution.</p>
+      </div>
 
-                    <div class="feature-card reveal delay-2">
-                        <div class="icon">✨</div>
-                        <h3>Smooth Animations</h3>
-                        <p>
-                            Modern animations and transitions that enhance the overall experience.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="card glass">
+        <i class="fa-solid fa-chart-line"></i>
+        <h4>Strategic Growth</h4>
+        <p>Smart investments and scalable expansion.</p>
+      </div>
 
-        <section class="services section" id="services">
-            <div class="container services-wrapper glass reveal">
-                <div>
-                    <h2>Built for Modern Brands</h2>
-                    <p>
-                        Whether you're creating a business website, startup landing page,
-                        portfolio, or agency site, this template gives you a polished foundation.
-                    </p>
-                </div>
+      <div class="card glass">
+        <i class="fa-solid fa-people-group"></i>
+        <h4>Synergy</h4>
+        <p>Unified leadership across all companies.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <a href="#contact" class="btn btn-primary">Start Your Project</a>
-            </div>
-        </section>
+<!-- COMPANIES -->
+<section id="companies" class="section fade-up">
+  <div class="container">
+    <h2>Our Companies</h2>
 
-        <section class="contact section" id="contact">
-            <div class="container contact-card glass reveal">
-                <h2>Let’s Build Something Great</h2>
-                <p>
-                    Clean design. Powerful performance. Smooth experience.
-                </p>
+    <div class="grid">
 
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required />
-                    <input type="email" placeholder="Email Address" required />
-                    <textarea rows="5" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
+      <div class="card glass">
+        <i class="fa-solid fa-plane"></i>
+        <h4>Aira Freight</h4>
+        <p>Logistics and shipping services.</p>
+      </div>
 
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>© 2026 Aira Synergy. All Rights Reserved.</p>
-        </div>
-    </footer>
+      <div class="card glass">
+        <i class="fa-solid fa-building"></i>
+        <h4>Aira Cleaning</h4>
+        <p>Residential and commercial cleaning.</p>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="card glass">
+        <i class="fa-solid fa-seedling"></i>
+        <h4>Aira Farms</h4>
+        <p>Sustainable agricultural production.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section fade-up">
+  <div class="container narrow glass">
+    <h2>Contact Us</h2>
+    <p>Let’s build something powerful together.</p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button class="btn-primary" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    © 2025 Aira Synergy. All rights reserved.
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
