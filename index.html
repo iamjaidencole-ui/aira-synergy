@@ -1,161 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Aira Synergy | Holding Company</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Aira Synergy is a diversified Jamaican holding company building essential service brands.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Modern software studio building scalable digital products."/>
+  <title>Your Studio — Modern Software Development</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header class="site-header">
-  <div class="container header-container">
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">YourStudio</a>
 
-    <div class="logo-area">
-      <img src="logo.png" alt="Aira Synergy Logo">
-    </div>
+    <button class="menu-btn" id="menuBtn">
+      <span></span><span></span><span></span>
+    </button>
 
-    <nav class="nav">
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#why">Why Us</a></li>
-        <li><a href="#companies">Companies</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <a href="#contact" class="nav-cta">Partner With Us</a>
-
-      <button class="menu-toggle" id="menuToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+    <nav class="menu" id="menu">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a class="btn" href="#contact">Get Started</a>
     </nav>
-
   </div>
 </header>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#why">Why Us</a>
-  <a href="#companies">Companies</a>
-  <a href="#contact">Contact</a>
-</div>
-
-<div class="menu-overlay" id="menuOverlay"></div>
-
 <!-- HERO -->
-<section id="home" class="hero fade-up">
-  <div class="container hero-content">
-    <h1>Home of the Aira Group of Companies</h1>
-    <p>Building essential services and scalable brands across Jamaica.</p>
+<section class="hero" id="home">
+  <div class="container hero-grid">
 
-    <div class="hero-actions">
-      <a href="#about" class="btn-primary">Who We Are</a>
-      <a href="#companies" class="btn-secondary">Our Companies</a>
+    <div class="hero-text" data-aos="fade-right">
+      <span class="badge">Software Studio</span>
+
+      <h1>We build <span>modern digital products</span> that scale.</h1>
+
+      <p>
+        We design, build, and launch high-performance web & mobile apps for startups and businesses.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Start Project</a>
+        <a href="#work" class="btn-outline">View Work</a>
+      </div>
+
+      <div class="hero-stats">
+        <div><strong>50+</strong><span>Projects</span></div>
+        <div><strong>10+</strong><span>Years</span></div>
+        <div><strong>24/7</strong><span>Support</span></div>
+      </div>
     </div>
+
+    <div class="hero-image" data-aos="fade-left">
+      <img src="https://via.placeholder.com/600x400" alt="hero image">
+    </div>
+
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="section fade-up">
-  <div class="container narrow glass">
-    <h2>About Aira Synergy</h2>
-    <p>
-      Aira Synergy is a diversified Jamaican holding company focused on building,
-      scaling, and managing essential service brands that deliver reliability,
-      efficiency, and long-term value.
-    </p>
-  </div>
-</section>
-
-<!-- WHY -->
-<section id="why" class="section fade-up">
+<!-- SERVICES -->
+<section class="section" id="services">
   <div class="container">
-    <h2>Why Choose Aira</h2>
 
-    <div class="grid">
-      <div class="card glass">
-        <i class="fa-solid fa-gears"></i>
-        <h4>Operational Excellence</h4>
-        <p>Strong systems and disciplined execution.</p>
+    <div class="section-header" data-aos="fade-up">
+      <h2>Services</h2>
+      <p>Everything you need to build, launch and scale</p>
+    </div>
+
+    <div class="grid-3">
+
+      <div class="card" data-aos="fade-up">
+        <i class="fas fa-code"></i>
+        <h3>Web Apps</h3>
+        <p>Scalable and fast web platforms built for growth.</p>
       </div>
 
-      <div class="card glass">
-        <i class="fa-solid fa-chart-line"></i>
-        <h4>Strategic Growth</h4>
-        <p>Smart investments and scalable expansion.</p>
+      <div class="card" data-aos="fade-up">
+        <i class="fas fa-mobile"></i>
+        <h3>Mobile Apps</h3>
+        <p>iOS and Android apps with seamless UX.</p>
       </div>
 
-      <div class="card glass">
-        <i class="fa-solid fa-people-group"></i>
-        <h4>Synergy</h4>
-        <p>Unified leadership across all companies.</p>
+      <div class="card" data-aos="fade-up">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud Systems</h3>
+        <p>Secure infrastructure and DevOps automation.</p>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- COMPANIES -->
-<section id="companies" class="section fade-up">
+<!-- WORK -->
+<section class="section dark" id="work">
   <div class="container">
-    <h2>Our Companies</h2>
 
-    <div class="grid">
+    <div class="section-header">
+      <h2>Recent Work</h2>
+      <p>Projects we’ve designed and shipped</p>
+    </div>
 
-      <div class="card glass">
-        <i class="fa-solid fa-plane"></i>
-        <h4>Aira Freight</h4>
-        <p>Logistics and shipping services.</p>
+    <div class="grid-3">
+
+      <div class="work-card">
+        <img src="https://via.placeholder.com/400x250">
+        <h3>Project One</h3>
+        <p>Logistics platform</p>
       </div>
 
-      <div class="card glass">
-        <i class="fa-solid fa-building"></i>
-        <h4>Aira Cleaning</h4>
-        <p>Residential and commercial cleaning.</p>
+      <div class="work-card">
+        <img src="https://via.placeholder.com/400x250">
+        <h3>Project Two</h3>
+        <p>SaaS dashboard</p>
       </div>
 
-      <div class="card glass">
-        <i class="fa-solid fa-seedling"></i>
-        <h4>Aira Farms</h4>
-        <p>Sustainable agricultural production.</p>
+      <div class="work-card">
+        <img src="https://via.placeholder.com/400x250">
+        <h3>Project Three</h3>
+        <p>Mobile app</p>
       </div>
 
     </div>
+
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section fade-up">
-  <div class="container narrow glass">
-    <h2>Contact Us</h2>
-    <p>Let’s build something powerful together.</p>
-
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button class="btn-primary" type="submit">Send Message</button>
-    </form>
+<!-- CTA -->
+<section class="cta">
+  <div class="container">
+    <h2>Ready to build something great?</h2>
+    <a href="#contact" class="btn-primary">Get Started</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <div class="container">
-    © 2025 Aira Synergy. All rights reserved.
+  <div class="container footer-grid">
+
+    <div>
+      <h3>YourStudio</h3>
+      <p>Building modern digital experiences.</p>
+    </div>
+
+    <div>
+      <h4>Links</h4>
+      <a href="#">Services</a>
+      <a href="#">Work</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>info@yourstudio.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 AIRA SYNERGY. All rights reserved.</p>
   </div>
 </footer>
 
+<!-- JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
