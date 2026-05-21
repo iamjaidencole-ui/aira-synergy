@@ -1,23 +1,19 @@
-// AOS
-AOS.init({
-  duration: 800,
-  once: true
-});
-
-// Mobile menu
+// Mobile menu toggle
 const menuBtn = document.getElementById("menuBtn");
-const menu = document.getElementById("menu");
+const navLinks = document.getElementById("navLinks");
 
 menuBtn.addEventListener("click", () => {
-  menu.classList.toggle("active");
+  navLinks.style.display =
+    navLinks.style.display === "flex" ? "none" : "flex";
 });
 
-// Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
+// Navbar scroll effect
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    navbar.style.background = "rgba(0,0,0,0.8)";
+  } else {
+    navbar.style.background = "rgba(0,0,0,0.3)";
+  }
 });
