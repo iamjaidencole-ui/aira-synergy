@@ -1,100 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Aira Synergy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aira Synergy — Freight • Digital • Innovation</title>
 
-<link rel="stylesheet" href="styles.css"/>
-<script defer src="script.js"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<!-- Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Font -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
-<!-- BACKGROUND GLOW LAYERS -->
-<div class="bg-glow"></div>
-<div class="bg-glow-2"></div>
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <div class="logo">Aira <span>Synergy</span></div>
 
-<!-- NAVBAR -->
-<header class="nav">
-    <div class="logo">
-        <img src="logo.png" alt="logo">
-        <span>Aira Synergy</span>
-    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <button class="menu-btn" id="menuBtn">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
 </header>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 <section class="hero" id="home">
-    <div class="glass hero-card">
-        <h1>Building Intelligent Systems Across Logistics & Digital Innovation</h1>
-        <p>
-            Aira Synergy connects freight operations and modern software solutions
-            to power scalable business growth.
-        </p>
+  <div class="container hero-grid">
 
-        <div class="hero-buttons">
-            <a href="#services" class="btn-primary">Explore Services</a>
-            <a href="#contact" class="btn-secondary">Get in Touch</a>
-        </div>
+    <div class="hero-text">
+      <div class="badge">Freight • Digital • Logistics</div>
+
+      <h1>Build smarter systems for <span>modern business</span></h1>
+
+      <p>
+        Aira Synergy connects freight, logistics, and digital innovation into one ecosystem
+        powering efficient business operations across the Caribbean.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#services" class="btn primary">Our Services</a>
+        <a href="#contact" class="btn outline">Get in Touch</a>
+      </div>
+
+      <div class="stats">
+        <div><strong>Aira Freight</strong><span>Shipping & Logistics</span></div>
+        <div><strong>Digital</strong><span>Web & Software</span></div>
+        <div><strong>Automation</strong><span>Business Systems</span></div>
+      </div>
     </div>
+
+    <div class="hero-card">
+      <div class="glow"></div>
+      <h3>Integrated Solutions</h3>
+      <p>One company. Multiple divisions. Seamless execution.</p>
+      <i class="fas fa-layer-group"></i>
+    </div>
+
+  </div>
 </section>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-    <h2>Our Ecosystem</h2>
+<!-- ================= SERVICES ================= -->
+<section class="section" id="services">
+  <div class="container">
+
+    <h2 class="title">Our Services</h2>
+    <p class="subtitle">Everything your business needs to operate and scale</p>
 
     <div class="grid">
 
-        <div class="glass card">
-            <i class="fas fa-truck-fast"></i>
-            <h3>Aira Freight</h3>
-            <p>End-to-end shipping, logistics coordination, and freight forwarding built for reliability and speed.</p>
-        </div>
+      <div class="card">
+        <i class="fas fa-truck"></i>
+        <h3>Freight & Shipping</h3>
+        <p>Reliable logistics and international shipping solutions.</p>
+      </div>
 
-        <div class="glass card">
-            <i class="fas fa-code"></i>
-            <h3>Aira Digital</h3>
-            <p>Custom websites, applications, automation systems, and modern digital infrastructure.</p>
-        </div>
+      <div class="card">
+        <i class="fas fa-code"></i>
+        <h3>Aira Digital</h3>
+        <p>Web development, apps, and custom software systems.</p>
+      </div>
 
-        <div class="glass card">
-            <i class="fas fa-layer-group"></i>
-            <h3>Synergy Operations</h3>
-            <p>Integrated systems connecting logistics and digital workflows into one seamless ecosystem.</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-    <div class="glass contact-card">
-
-        <h2>Contact Us</h2>
-
-        <form id="contactForm">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <textarea placeholder="Message..." required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-
-        <p class="small">© 2026 Aira Synergy — All Rights Reserved</p>
+      <div class="card">
+        <i class="fas fa-warehouse"></i>
+        <h3>Operations Systems</h3>
+        <p>Business automation and workflow optimization tools.</p>
+      </div>
 
     </div>
+  </div>
 </section>
 
+<!-- ================= PORTFOLIO ================= -->
+<section class="section dark" id="portfolio">
+  <div class="container">
+
+    <h2 class="title">Portfolio</h2>
+    <p class="subtitle">Projects built under Aira ecosystem</p>
+
+    <div class="grid">
+
+      <div class="card dark-card">
+        <h3>Aira Freight System</h3>
+        <p>End-to-end logistics tracking platform.</p>
+      </div>
+
+      <div class="card dark-card">
+        <h3>Aira Digital Studio</h3>
+        <p>Web development & automation services.</p>
+      </div>
+
+      <div class="card dark-card">
+        <h3>Client Dashboards</h3>
+        <p>Real-time business monitoring systems.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="container center">
+
+    <h2 class="title">Let’s Work Together</h2>
+    <p class="subtitle">Tell us about your project or business needs</p>
+
+    <a class="btn primary" href="mailto:info@aira.com">
+      Contact Us
+    </a>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <div>
+      <h3>Aira Synergy</h3>
+      <p>Freight • Digital • Innovation</p>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <p>info@aira.com</p>
+      <p>Jamaica</p>
+    </div>
+
+  </div>
+
+  <div class="bottom">
+    <p>© 2026 Aira Synergy. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
